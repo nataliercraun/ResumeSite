@@ -9,14 +9,22 @@
 }
 
 #link_row {
-	width: 80%; 
+	margin-top: 2%; 
+	width: 80vw; 
 	background-color: lightgrey;  
 }
 
 .link_btn {
 	/* Spacing */
-	margin: 2% 10% 2% 10%; 
+	margin: 2vh 5vw 2vh 5vw; 
 
 	/* Aesthetic */
 	border: 0px; 
+	background-color: lightgrey; 
+}
+
+.link_btn:hover {
+	cursor: pointer; 
+	transform: scale(1.1); 
+	transition: all .2s; 
 }
