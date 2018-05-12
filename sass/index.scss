@@ -1,3 +1,11 @@
+// Variables
+$sea_foam: #d5f4e6;
+$teal: #80ced6; 
+$yellow: #fefbd8; 
+$dark_teal: #618685; 
+
+@import 'mobile'; 
+
 .container {
 	display: flex; 
 	justify-content: center; 
@@ -16,15 +24,23 @@
 
 .link_btn {
 	/* Spacing */
+	box-sizing: border-box; 
 	margin: 2vh 5vw 2vh 5vw; 
+	font-size: 20px; 
+	overflow: hidden; 
 
 	/* Aesthetic */
 	border: 0px; 
 	background-color: lightgrey; 
+	font-family: 'Raleway', sans-serif;
+	font-style: bold; 
 }
 
 .link_btn:hover {
 	cursor: pointer; 
-	transform: scale(1.1); 
+	transform: scale(1.2); 
 	transition: all .2s; 
+	color: $dark_teal; 
 }
+
+
