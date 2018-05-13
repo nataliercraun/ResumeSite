@@ -20,6 +20,9 @@ $dark_teal: #618685;
 	margin-top: 2%; 
 	width: 80vw; 
 	background-color: lightgrey;  
+
+	/* transition */
+	transition: all 1s ease-in-out;
 }
 
 .link_btn {
@@ -33,7 +36,7 @@ $dark_teal: #618685;
 	border: 0px; 
 	background-color: lightgrey; 
 	font-family: 'Raleway', sans-serif;
-	font-style: bold; 
+	font-style: bold;  
 }
 
 .link_btn:hover {
