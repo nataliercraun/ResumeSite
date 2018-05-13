@@ -6,6 +6,10 @@ $dark_teal: #618685;
 
 @import 'mobile'; 
 
+* {
+	outline: none; 
+}
+
 .container {
 	display: flex; 
 	justify-content: center; 
