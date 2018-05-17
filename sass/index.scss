@@ -5,6 +5,7 @@ $yellow: #fefbd8;
 $dark_teal: #618685; 
 
 @import 'mobile'; 
+@import 'about'; 
 
 * {
 	outline: none; 
@@ -13,11 +14,14 @@ $dark_teal: #618685;
 .container {
 	display: flex; 
 	justify-content: center; 
+	flex-direction: column; 
+	align-items: center; 
 }
 
 .row {
 	display: flex; 
 	justify-content: center; 
+	flex-direction: row; 
 }
 
 #link_row {
@@ -49,5 +53,3 @@ $dark_teal: #618685;
 	transition: all .2s; 
 	color: $dark_teal; 
 }
-
-
