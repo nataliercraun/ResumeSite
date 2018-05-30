@@ -7,26 +7,13 @@
 	transition: all 2s ease-in-out;
 }
 
-.aboutLeft {
+.aboutCard {
 	box-sizing: border-box; 
 	margin: 4vw;
 
-	display: block; 
-	position: relative; 
-	left: 0px;
+	margin-top: -200px; 
 
-	transition: all 1s ease-in-out;
-}
-
-.aboutRight {
-	box-sizing: border-box; 
-	margin: 4vw;
-
-	display: block; 
-	position: relative; 
-	right: 0px; 
-
-	transition: all 1s ease-in-out;
+	transition: all .7s;
 }
 
 .infoLabel {
