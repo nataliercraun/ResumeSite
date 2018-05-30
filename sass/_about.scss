@@ -11,8 +11,9 @@
 	box-sizing: border-box; 
 	margin: 4vw;
 
+	display: block; 
 	position: relative; 
-	left: -1000px;
+	left: 0px;
 
 	transition: all 1s ease-in-out;
 }
@@ -21,8 +22,9 @@
 	box-sizing: border-box; 
 	margin: 4vw;
 
+	display: block; 
 	position: relative; 
-	right: -1000px; 
+	right: 0px; 
 
 	transition: all 1s ease-in-out;
 }
