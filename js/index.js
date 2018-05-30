@@ -2,19 +2,24 @@ function about() {
 
 	var t_margin = document.getElementById('link_row').style.marginTop; 
 
-	if (t_margin == '20%') {
+
+	if(document.getElementById("about").style.display = 'none') {
+		console.log('mobile');
+		/*Mobile*/
+		aboutMobile(); 
+	} else {
+		/* Non-mobile */
+		if (t_margin == '20%') {
 		document.getElementById('link_row').style.marginTop = '0%'; 
 		var abtRight = document.getElementsByClassName("aboutRight"); 
 		var abtLeft = document.getElementsByClassName("aboutLeft");
 		var i; 
 		for (i=0; i < abtRight.length; i++) {
-			/*abtRight[i].style.display = 'none';*/
-			abtRight[i].style.right = '-1000px'; 
+     		abtRight[i].style.right = '-1000px'; 
 		}
 		var j;  
 		for (j=0; j < abtLeft.length; j++) {
-			/*abtLeft[j].style.display = 'none';*/
-			abtLeft[j].style.left = '-1000px'; 
+     		abtLeft[j].style.left = '-1000px';
 		}
 
 		document.getElementById('abtBtn').innerHTML = 'About';
@@ -26,29 +31,28 @@ function about() {
 		document.getElementById('projBtn').style.pointerEvents = '';
 		document.getElementById('skillBtn').style.pointerEvents = '';
 
-	} else {
-		document.getElementById('link_row').style.marginTop = '20%';
-		var abtRight = document.getElementsByClassName("aboutRight"); 
-		var abtLeft = document.getElementsByClassName("aboutLeft");
-		var i; 
-		for (i=0; i < abtRight.length; i++) {
-			/*abtRight[i].style.display = 'block';*/
-			abtRight[i].style.right = '0px'; 
-		}
-		var j;  
-		for (j=0; j < abtLeft.length; j++) {
-			/*abtLeft[j].style.display = 'block';*/
-			abtLeft[j].style.left = '0px'; 
-		}
+		} else {
+			document.getElementById('link_row').style.marginTop = '20%';
+			var abtRight = document.getElementsByClassName("aboutRight"); 
+			var abtLeft = document.getElementsByClassName("aboutLeft");
+			var i; 
+			for (i=0; i < abtRight.length; i++) {
+	     		abtRight[i].style.right = '0px'; 
+			}
+			var j;  
+			for (j=0; j < abtLeft.length; j++) {
+	     		abtLeft[j].style.left = '0px'; 		
+	     	}
 
-		document.getElementById('abtBtn').innerHTML = 'Close';
-		document.getElementById('abtBtn').style.color = '#618685';
-		document.getElementById('abtBtn').style.border = 'solid #618685 2px';  
-		document.getElementById('abtBtn').style.borderRadius = '25px'; 
+			document.getElementById('abtBtn').innerHTML = 'Close';
+			document.getElementById('abtBtn').style.color = '#618685';
+			document.getElementById('abtBtn').style.border = 'solid #618685 2px';  
+			document.getElementById('abtBtn').style.borderRadius = '25px'; 
 
-		document.getElementById('resBtn').style.pointerEvents = 'none';
-		document.getElementById('projBtn').style.pointerEvents = 'none';
-		document.getElementById('skillBtn').style.pointerEvents = 'none';
+			document.getElementById('resBtn').style.pointerEvents = 'none';
+			document.getElementById('projBtn').style.pointerEvents = 'none';
+			document.getElementById('skillBtn').style.pointerEvents = 'none';
+		}
 	}
 }
 
