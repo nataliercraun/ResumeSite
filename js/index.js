@@ -1,15 +1,19 @@
 function about() {
 
 	var about = document.getElementsByClassName("aboutCard");
+	var bio = document.getElementById("summary"); 
 	var abtBtn = document.getElementById('abtBtn'); 
 	var resBtn = document.getElementById('resBtn');
 	var projBtn = document.getElementById('projBtn');
-	var skillBtn = document.getElementById('skillBtn');
 
 	if (abtBtn.innerHTML != 'Close') {
 		for (var i = 0; i < about.length; i++) {
 			about[i].style.marginTop = '10px';
 		}
+
+		// Bio appears
+		bio.style.display = 'flex';
+
 		abtBtn.innerHTML = 'Close';
 		abtBtn.style.color = '#618685';
 		abtBtn.style.border = 'solid #618685 2px';  
@@ -17,11 +21,14 @@ function about() {
 
 		resBtn.style.pointerEvents = 'none';
 		projBtn.style.pointerEvents = 'none';
-		skillBtn.style.pointerEvents = 'none';
 	} else {
 		for (var i = 0; i < about.length; i++) {
 			about[i].style.marginTop = '-200px';
 		}
+
+		// Bio disappears
+		bio.style.display = 'none';
+
 		abtBtn.innerHTML = 'About';
 		abtBtn.style.color = 'black';
 		abtBtn.style.border = '';  
@@ -29,7 +36,6 @@ function about() {
 
 		resBtn.style.pointerEvents = '';
 		projBtn.style.pointerEvents = '';
-		skillBtn.style.pointerEvents = '';
 	}
 }
 
@@ -38,7 +44,6 @@ function resume() {
 	var abtBtn = document.getElementById('abtBtn'); 
 	var resBtn = document.getElementById('resBtn');
 	var projBtn = document.getElementById('projBtn');
-	var skillBtn = document.getElementById('skillBtn');
 
 	if (resBtn.innerHTML != 'Close') {
 		for (var i = 0; i < about.length; i++) {
@@ -47,8 +52,7 @@ function resume() {
 
 		// Resume comes up from bottom 
 		var res = document.getElementById('resume');
-		res.style.visibility = 'visible';
-		/*res.style.marginTop = '15px'; */
+		res.style.display = 'flex'; 
 
 		resBtn.innerHTML = 'Close';
 		resBtn.style.color = '#618685';
@@ -57,7 +61,6 @@ function resume() {
 
 		abtBtn.style.pointerEvents = 'none';
 		projBtn.style.pointerEvents = 'none';
-		skillBtn.style.pointerEvents = 'none';
 	} else {
 		for (var i = 0; i < about.length; i++) {
 			about[i].style.marginTop = '-200px';
@@ -65,8 +68,7 @@ function resume() {
 
 		//Resume moves to bottom and is hidden
 		var res = document.getElementById('resume');
-		/*res.style.marginTop = '-1000px'; */
-		res.style.visibility = 'hidden';
+		res.style.display = 'none'; 
 		
 		resBtn.innerHTML = 'Resume';
 		resBtn.style.color = 'black';
@@ -75,7 +77,6 @@ function resume() {
 
 		abtBtn.style.pointerEvents = '';
 		projBtn.style.pointerEvents = '';
-		skillBtn.style.pointerEvents = '';
 	}
 }
 
@@ -84,11 +85,11 @@ function projects() {
 	var abtBtn = document.getElementById('abtBtn'); 
 	var resBtn = document.getElementById('resBtn');
 	var projBtn = document.getElementById('projBtn');
-	var skillBtn = document.getElementById('skillBtn');
 
 	if (projBtn.innerHTML != 'Close') {
 		for (var i = 0; i < about.length; i++) {
 			about[i].style.marginTop = '10px';
+			about[i].style.visibility = 'visible'; 
 		}
 		projBtn.innerHTML = 'Close';
 		projBtn.style.color = '#618685';
@@ -97,10 +98,10 @@ function projects() {
 
 		abtBtn.style.pointerEvents = 'none';
 		resBtn.style.pointerEvents = 'none';
-		skillBtn.style.pointerEvents = 'none';
 	} else {
 		for (var i = 0; i < about.length; i++) {
 			about[i].style.marginTop = '-200px';
+			about[i].style.visibility = 'hidden'; 
 		}
 		projBtn.innerHTML = 'Projects';
 		projBtn.style.color = 'black';
@@ -108,41 +109,6 @@ function projects() {
 		projBtn.style.borderRadius = '';
 
 		abtBtn.style.pointerEvents = '';
-		resBtn.style.pointerEvents = '';
-		skillBtn.style.pointerEvents = '';
-	}
-}
-
-function skills() {
-	var about = document.getElementsByClassName("aboutCard");
-	var abtBtn = document.getElementById('abtBtn'); 
-	var resBtn = document.getElementById('resBtn');
-	var projBtn = document.getElementById('projBtn');
-	var skillBtn = document.getElementById('skillBtn');
-
-	if (skillBtn.innerHTML != 'Close') {
-		for (var i = 0; i < about.length; i++) {
-			about[i].style.marginTop = '10px';
-		}
-		skillBtn.innerHTML = 'Close';
-		skillBtn.style.color = '#618685';
-		skillBtn.style.border = 'solid #618685 2px';  
-		skillBtn.style.borderRadius = '25px';
-
-		abtBtn.style.pointerEvents = 'none';
-		projBtn.style.pointerEvents = 'none';
-		resBtn.style.pointerEvents = 'none';
-	} else {
-		for (var i = 0; i < about.length; i++) {
-			about[i].style.marginTop = '-200px';
-		}
-		skillBtn.innerHTML = 'Skills';
-		skillBtn.style.color = 'black';
-		skillBtn.style.border = '';  
-		skillBtn.style.borderRadius = '';
-
-		abtBtn.style.pointerEvents = '';
-		projBtn.style.pointerEvents = '';
 		resBtn.style.pointerEvents = '';
 	}
 }
