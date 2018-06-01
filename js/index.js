@@ -44,6 +44,12 @@ function resume() {
 		for (var i = 0; i < about.length; i++) {
 			about[i].style.marginTop = '10px';
 		}
+
+		// Resume comes up from bottom 
+		var res = document.getElementById('resume');
+		res.style.visibility = 'visible';
+		/*res.style.marginTop = '15px'; */
+
 		resBtn.innerHTML = 'Close';
 		resBtn.style.color = '#618685';
 		resBtn.style.border = 'solid #618685 2px';  
@@ -56,6 +62,12 @@ function resume() {
 		for (var i = 0; i < about.length; i++) {
 			about[i].style.marginTop = '-200px';
 		}
+
+		//Resume moves to bottom and is hidden
+		var res = document.getElementById('resume');
+		/*res.style.marginTop = '-1000px'; */
+		res.style.visibility = 'hidden';
+		
 		resBtn.innerHTML = 'Resume';
 		resBtn.style.color = 'black';
 		resBtn.style.border = '';  
