@@ -1,0 +1,68 @@
+
+/* Center things */
+
+#social-media {
+    transition: all .75s ease-in-out; 
+}
+
+#social-media .row {
+    width: 251px;
+    margin-top: 25px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#social-media a {
+    margin: 8px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    float: left;
+
+
+    background-image: url("../images/social-sprite.png");
+    background-size: 440px; /* width is 550 bc 50px * 11 icons */
+
+    transition: all 0.4s;
+    border-radius: 50%;
+}
+
+#fb:hover {
+    background-position: 0px -40px;
+}
+
+#gplus:hover {
+    background-position: -400px -40px;
+}
+
+#twitter:hover {
+    background-position: -320px -40px;
+}
+
+#linkedin:hover {
+    background-position: -160px -40px;
+}
+
+#fb {
+    background-position: 0px -80px;
+}
+
+#linkedin {
+    background-position: -160px -80px;
+}
+
+#twitter {
+    background-position: -320px -80px;
+}
+
+#gplus {
+    background-position: -400px -80px;
+}
+
+.brag {
+    display: none; 
+}
+
+
+
+

@@ -3,11 +3,20 @@ $sea_foam: #d5f4e6;
 $teal: #80ced6; 
 $yellow: #fefbd8; 
 $dark_teal: #618685; 
+$highlight: #c94c4c; 
 
 @import 'mobile'; 
 @import 'about';
 @import 'resume'; 
-@import 'projects'; 
+@import 'projects';
+@import 'social_nav'; 
+
+.flex-display-row {
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	flex-direction: row; 
+}
 
 * {
 	outline: none; 
@@ -18,6 +27,16 @@ $dark_teal: #618685;
 	justify-content: center; 
 	flex-direction: column; 
 	align-items: center; 
+}
+
+.summary_paragraph {
+	line-height: 30px; 
+	font-size: 15px; 
+}
+
+.highlight {
+	color: $highlight; 
+	font-weight: bold; 
 }
 
 .row {
