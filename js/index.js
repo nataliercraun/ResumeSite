@@ -11,10 +11,17 @@ function about() {
 	var projBtn = document.getElementById('projBtn');
 
 	if (abtBtn.innerHTML != 'Close') {
-		console.log('here'); 
-		social.style.marginTop = '300px'; 
-		summary.style.left = '200px'; 
 
+		// social.style.marginTop = '300px'; 
+		// summary.style.left = '500px';
+		// summary.style.top = '200px'; 
+
+		// setTimeout(changePos(summary), '10000'); 
+
+		summary.style.position = 'static'; 
+
+		document.getElementsByClassName('sum_mask')[0].style.height = '0vh'; 
+		
 		// Button stuff 
 		abtBtn.innerHTML = 'Close';
 		abtBtn.style.color = '#618685';
@@ -22,6 +29,7 @@ function about() {
 		abtBtn.style.borderRadius = '25px';
 		projBtn.style.pointerEvents = 'none';
 		resBtn.style.pointerEvents = 'none';
+
 	} else {
 
 		social.style.marginTop = '25px'; 
@@ -36,6 +44,10 @@ function about() {
 		resBtn.style.pointerEvents = '';
 	}
 	
+}
+
+function changePos(summary) {
+	 summary.style.position = 'static';
 }
 
 function resume() {
