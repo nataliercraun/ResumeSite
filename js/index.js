@@ -12,14 +12,7 @@ function about() {
 
 	if (abtBtn.innerHTML != 'Close') {
 
-		// social.style.marginTop = '300px'; 
-		// summary.style.left = '500px';
-		// summary.style.top = '200px'; 
-
-		// setTimeout(changePos(summary), '10000'); 
-
 		summary.style.position = 'static'; 
-
 		document.getElementsByClassName('sum_mask')[0].style.height = '0vh'; 
 		
 		// Button stuff 
@@ -32,8 +25,7 @@ function about() {
 
 	} else {
 
-		social.style.marginTop = '25px'; 
-		summary.style.left = '-10000px'; 
+		document.getElementsByClassName('sum_mask')[0].style.height = '48vh'; 
 		// Button stuff 
 		abtBtn.innerHTML = 'About';
 		abtBtn.style.color = 'black';
@@ -44,10 +36,6 @@ function about() {
 		resBtn.style.pointerEvents = '';
 	}
 	
-}
-
-function changePos(summary) {
-	 summary.style.position = 'static';
 }
 
 function resume() {
