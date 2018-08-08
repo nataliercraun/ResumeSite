@@ -4,6 +4,7 @@ function about() {
 
 	var summary = document.getElementById('summary'); 
 	var social = document.getElementById('social-media'); 
+	var bit = document.getElementById('bitmoji'); 
 
 	// Get all navbar buttons 
 	var abtBtn = document.getElementById('abtBtn'); 
@@ -12,6 +13,7 @@ function about() {
 
 	if (abtBtn.innerHTML != 'Close') {
 
+		bit.style.visibility = 'visible'; 
 		summary.style.position = 'static'; 
 		document.getElementsByClassName('sum_mask')[0].style.height = '0vh'; 
 
@@ -29,6 +31,7 @@ function about() {
 
 		document.getElementsByClassName('sum_mask')[0].style.height = '100%'; 
 		summary.style.marginBottom = '0px'; 
+		bit.style.visibility = 'hidden'; 
 
 		// Button stuff 
 		abtBtn.innerHTML = 'About';

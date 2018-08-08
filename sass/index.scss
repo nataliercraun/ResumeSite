@@ -28,6 +28,15 @@ $highlight: #c94c4c;
 	align-items: center; 
 }
 
+#bitmoji {
+	position: absolute; 
+	left: -70px; 
+	border-radius: 25px; 
+	visibility: hidden; 
+
+	transform: rotate(18deg) scale(.5); 
+}
+
 .summary_paragraph {
 	line-height: 30px; 
 	font-size: 15px; 
