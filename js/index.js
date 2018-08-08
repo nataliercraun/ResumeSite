@@ -14,6 +14,8 @@ function about() {
 
 		summary.style.position = 'static'; 
 		document.getElementsByClassName('sum_mask')[0].style.height = '0vh'; 
+
+		summary.style.marginBottom = '55px'; 
 		
 		// Button stuff 
 		abtBtn.innerHTML = 'Close';
@@ -25,7 +27,9 @@ function about() {
 
 	} else {
 
-		document.getElementsByClassName('sum_mask')[0].style.height = '48vh'; 
+		document.getElementsByClassName('sum_mask')[0].style.height = '100%'; 
+		summary.style.marginBottom = '0px'; 
+
 		// Button stuff 
 		abtBtn.innerHTML = 'About';
 		abtBtn.style.color = 'black';
