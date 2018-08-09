@@ -47,6 +47,7 @@ function about() {
 function resume() {
 
 	var resume = document.getElementById('resume'); 
+	var nav = document.getElementById('link_row'); 
 
 	// Get all navbar buttons 
 	var abtBtn = document.getElementById('abtBtn'); 
@@ -54,17 +55,22 @@ function resume() {
 	var projBtn = document.getElementById('projBtn');
 
 	if (resBtn.innerHTML != 'Close') {
+		console.log(window.innerWidth); 
 
-		resume.style.top = '12vh'; 
-		resume.style.marginBottom = '75px'; 
-		
-		// Button stuff 
-		resBtn.innerHTML = 'Close';
-		resBtn.style.color = '#618685';
-		resBtn.style.border = 'solid #618685 2px';  
-		resBtn.style.borderRadius = '25px';
-		projBtn.style.pointerEvents = 'none';
-		abtBtn.style.pointerEvents = 'none';
+		if (window.innerWidth > 705) {
+			resume.style.top = '12vh'; 
+			resume.style.marginBottom = '75px'; 
+			
+			// Button stuff 
+			resBtn.innerHTML = 'Close';
+			resBtn.style.color = '#618685';
+			resBtn.style.border = 'solid #618685 2px';  
+			resBtn.style.borderRadius = '25px';
+			projBtn.style.pointerEvents = 'none';
+			abtBtn.style.pointerEvents = 'none';
+		} else {
+			 window.open('NatalieCraun_Resume.pdf');
+		}
 
 	} else {
 
