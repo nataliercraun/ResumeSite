@@ -16,7 +16,6 @@ function about() {
 		bit.style.visibility = 'visible'; 
 		summary.style.position = 'static'; 
 		document.getElementsByClassName('sum_mask')[0].style.height = '0vh'; 
-
 		summary.style.marginBottom = '55px'; 
 		
 		// Button stuff 
@@ -46,6 +45,41 @@ function about() {
 }
 
 function resume() {
+
+	var resume = document.getElementById('resume'); 
+
+	// Get all navbar buttons 
+	var abtBtn = document.getElementById('abtBtn'); 
+	var resBtn = document.getElementById('resBtn');
+	var projBtn = document.getElementById('projBtn');
+
+	if (resBtn.innerHTML != 'Close') {
+
+		resume.style.top = '12vh'; 
+		resume.style.marginBottom = '75px'; 
+		
+		// Button stuff 
+		resBtn.innerHTML = 'Close';
+		resBtn.style.color = '#618685';
+		resBtn.style.border = 'solid #618685 2px';  
+		resBtn.style.borderRadius = '25px';
+		projBtn.style.pointerEvents = 'none';
+		abtBtn.style.pointerEvents = 'none';
+
+	} else {
+
+		resume.style.top = '5000px'; 
+		resume.style.marginBottom = '0px'; 
+
+		// Button stuff 
+		resBtn.innerHTML = 'Resume';
+		resBtn.style.color = 'black';
+		resBtn.style.border = '';  
+		resBtn.style.borderRadius = '';
+
+		projBtn.style.pointerEvents = '';
+		abtBtn.style.pointerEvents = '';
+	}
 	
 }
 

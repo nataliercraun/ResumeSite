@@ -1,4 +1,8 @@
 #resume {
-	display: none; 
+	position: absolute; 
+	top: 5000px;  
 	margin-top: 15px; 
+	z-index: 200; 
+
+	transition: all 1s ease-in-out;
 }
