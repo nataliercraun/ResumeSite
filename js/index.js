@@ -48,6 +48,7 @@ function resume() {
 
 	var resume = document.getElementById('resume'); 
 	var nav = document.getElementById('link_row'); 
+	var social = document.getElementById('social-media'); 
 
 	// Get all navbar buttons 
 	var abtBtn = document.getElementById('abtBtn'); 
@@ -58,8 +59,10 @@ function resume() {
 		console.log(window.innerWidth); 
 
 		if (window.innerWidth > 705) {
+			resume.style.visibility = 'visible'; 
 			resume.style.top = '12vh'; 
 			resume.style.marginBottom = '75px'; 
+			social.style.display = 'none'; 
 			
 			// Button stuff 
 			resBtn.innerHTML = 'Close';
@@ -76,6 +79,8 @@ function resume() {
 
 		resume.style.top = '5000px'; 
 		resume.style.marginBottom = '0px'; 
+		social.style.display = 'block'; 
+		resume.style.visibility = 'hidden'; 
 
 		// Button stuff 
 		resBtn.innerHTML = 'Resume';
