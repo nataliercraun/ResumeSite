@@ -56,7 +56,6 @@ function resume() {
 	var projBtn = document.getElementById('projBtn');
 
 	if (resBtn.innerHTML != 'Close') {
-		console.log(window.innerWidth); 
 
 		if (window.innerWidth > 705) {
 			resume.style.visibility = 'visible'; 

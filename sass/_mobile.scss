@@ -5,3 +5,15 @@
 		flex-direction: column;  
 	}
 }
+
+@media (max-width: 480px) {
+
+	#social-media {
+   		display: none;
+	}	
+
+	#bitmoji {
+		left: -95px !important; 
+		transform: rotate(18deg) scale(.3) !important; 
+	}
+}
